@@ -34,7 +34,7 @@ export const Description = styled.div`
     margin-top: 12%;
     z-index: 999;
     `
-    const teste = keyframes`
+    const animationAvatar = keyframes`
         0% {
             top: -220px;
         }
@@ -49,7 +49,7 @@ export const ContainerAvatar = styled.div`
     position: relative;
     left: 260px;
     bottom: 200px;
-    animation: ${teste} 2.1s infinite alternate-reverse;
+    animation: ${animationAvatar} 2.1s infinite alternate-reverse;
 `
 export const Avatar = styled.img`
  width: 300px;
