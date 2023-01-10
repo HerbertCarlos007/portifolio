@@ -36,11 +36,11 @@ export const Description = styled.div`
     `
     const animationAvatar = keyframes`
         0% {
-            top: -220px;
+            top: -290px;
         }
     
         100%{
-            top: -260px;
+            top: -320px;
         }
     `
 export const ContainerAvatar = styled.div`
@@ -54,4 +54,21 @@ export const ContainerAvatar = styled.div`
 export const Avatar = styled.img`
  width: 300px;
 
+`
+
+export const ButtonLinkedin = styled.button`
+    width: 390px;
+    height: 85px;
+    background-color: #8E5D52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+    margin-top: 5px;
+`
+
+export const Link = styled.a`
+     color: white;
+    font-size: 28px;
+    text-decoration: none;
 `
