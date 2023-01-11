@@ -19,12 +19,24 @@ import {
     ComingSoon,
     TextComingSoon,
     LinkToGithub,
-    ContainerSkills
-    ,Paragraph
+    Paragraph,
+    ContainerSkills,
+    ContainerWithMySkills,
+    CardSkills,
+    ImageSkill
 } from './styles'
 import { Header } from '../../components/Header'
 import avatar from '../../assets/avatar.png'
 import avatar2 from '../../assets/avatar2.png'
+import html from '../../assets/html.svg'
+import css from '../../assets/css.svg'
+import js from '../../assets/js.svg'
+import react from '../../assets/react.svg'
+import styledComponents from '../../assets/styledComponents.svg'
+import git from '../../assets/git.svg'
+import github from '../../assets/github.svg'
+import node from '../../assets/node.png'
+
 
 export const Home = () => {
     return (
@@ -48,9 +60,9 @@ export const Home = () => {
             <AboutMeContainer id="aboutMe">
                 <AvatarAboutMe src={avatar2} />
                 <TextAboutMe>
-                    <Title style={{marginRight: '325px', marginBottom: '100px'}}>Sobre mim</Title>
+                    <Title style={{ marginRight: '325px', marginBottom: '130px' }}>Sobre mim</Title>
 
-                     <Paragraph>Meu nome é Herbert Carlos e eu sou um apaixonado</Paragraph>
+                    <Paragraph>Meu nome é Herbert Carlos e eu sou um apaixonado</Paragraph>
 
                     por tecnologia que decidiu trilhar o caminho da
                     <br />
@@ -64,7 +76,7 @@ export const Home = () => {
                     <br />
 
                     <Paragraph>Hoje já entendo tecnologias como ReactJS, NodeJS, Mysql e etc.</Paragraph>
-                    </TextAboutMe>
+                </TextAboutMe>
             </AboutMeContainer>
 
             <ContainerProjects id="projects">
@@ -93,6 +105,34 @@ export const Home = () => {
 
             <ContainerSkills id="skills">
                 <Title>Habilidades</Title>
+                <ContainerWithMySkills>
+
+                    <CardSkills>
+                        <ImageSkill src={html}/>
+                    </CardSkills>
+
+                    <CardSkills>
+                    <ImageSkill src={css}/>
+                    </CardSkills>
+
+                    <CardSkills>
+                    <ImageSkill src={js}/>
+                    </CardSkills>
+
+                    <CardSkills>
+                    <ImageSkill src={react}/>
+                    </CardSkills>
+                
+                    <CardSkills>
+                    <ImageSkill src={styledComponents}/>
+                    </CardSkills>
+
+                    <CardSkills>
+                    <ImageSkill src={git}/>
+                    </CardSkills>
+
+                    
+                </ContainerWithMySkills>
             </ContainerSkills>
         </>
 

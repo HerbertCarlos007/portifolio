@@ -103,11 +103,12 @@ export const TextAboutMe = styled.span`
 
 export const ContainerProjects = styled.div`
     background-color: #352728;
-    height: 580px;
+    height: 480px;
 `
 
 export const Title = styled.h2`
     display: flex;
+    height: 0;
     justify-content: center;
     text-align: center;
     position: relative;
@@ -164,7 +165,37 @@ export const LinkToGithub = styled.a`
 `
 
 export const ContainerSkills = styled.div`
-     height: 580px;
+     height: 540px;
     background-color: #493737;
+`
+
+export const ContainerWithMySkills = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+  margin-right: 350px;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 0.1fr);
+  grid-gap: 25px;
+
+  
+    
+`
+
+export const CardSkills = styled.div`
+    height: 106px;
+    display: flex;
+    width: 106px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+`
+
+export const ImageSkill = styled.img`
+
 `
 
