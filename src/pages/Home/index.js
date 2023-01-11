@@ -23,7 +23,9 @@ import {
     ContainerSkills,
     ContainerWithMySkills,
     CardSkills,
-    ImageSkill
+    ImageSkill,
+    ContainerDescriptionSkill,
+    TextDescriptionSkill
 } from './styles'
 import { Header } from '../../components/Header'
 import avatar from '../../assets/avatar.png'
@@ -108,31 +110,38 @@ export const Home = () => {
                 <ContainerWithMySkills>
 
                     <CardSkills>
-                        <ImageSkill src={html}/>
+                        <ImageSkill src={html} />
                     </CardSkills>
 
                     <CardSkills>
-                    <ImageSkill src={css}/>
+                        <ImageSkill src={css} />
                     </CardSkills>
 
                     <CardSkills>
-                    <ImageSkill src={js}/>
+                        <ImageSkill src={js} />
                     </CardSkills>
 
                     <CardSkills>
-                    <ImageSkill src={react}/>
-                    </CardSkills>
-                
-                    <CardSkills>
-                    <ImageSkill src={styledComponents}/>
+                        <ImageSkill src={react} />
                     </CardSkills>
 
                     <CardSkills>
-                    <ImageSkill src={git}/>
+                        <ImageSkill src={styledComponents} />
                     </CardSkills>
 
-                    
+                    <CardSkills>
+                        <ImageSkill src={git} />
+                    </CardSkills>
+
+
                 </ContainerWithMySkills>
+
+                <ContainerDescriptionSkill>
+                    <TextDescriptionSkill>
+                     <Paragraph>/* Passe o mouse por cima de</Paragraph>
+                     alguma habilidade para ler a<br/> descrição */
+                    </TextDescriptionSkill>
+                </ContainerDescriptionSkill>
             </ContainerSkills>
         </>
 

@@ -199,3 +199,19 @@ export const ImageSkill = styled.img`
 
 `
 
+export const ContainerDescriptionSkill = styled.div`
+    display: flex;
+    justify-content: right;
+    margin-right: 350px;
+    position: relative;
+    bottom: 230px;
+    
+`
+
+export const TextDescriptionSkill = styled.span`
+    color: white;
+    font-family: 'Quando', serif;
+    font-size: 20px;
+    max-width: 40%;
+`
+
