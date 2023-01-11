@@ -11,7 +11,9 @@ import {
     Link,
     AboutMeContainer,
     AvatarAboutMe,
-    TextAboutMe
+    TextAboutMe,
+    ContainerProjects,
+    Title
 } from './styles'
 import { Header } from '../../components/Header'
 import avatar from '../../assets/avatar.png'
@@ -38,7 +40,8 @@ export const Home = () => {
 
             <AboutMeContainer id="aboutMe">
                 <AvatarAboutMe src={avatar2} />
-                <TextAboutMe>Sobre mim
+                <TextAboutMe>
+                    Sobre mim
 
                     <p style={{textIndent: '30px'}}>Meu nome é Herbert Carlos e eu sou um apaixonado </p>
                     
@@ -56,6 +59,10 @@ export const Home = () => {
 
                    <p style={{textIndent: '30px', marginTop: '10px'}}>Hoje já entendo tecnologias como ReactJS, NodeJS, Mysql e etc.</p></TextAboutMe>
             </AboutMeContainer>
+
+            <ContainerProjects id="projects">
+                <Title>Projetos</Title>
+            </ContainerProjects>
         </>
 
     )

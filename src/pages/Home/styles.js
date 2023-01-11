@@ -94,5 +94,24 @@ export const AvatarAboutMe = styled.img`
 export const TextAboutMe = styled.span`
     font-size: 25px;
     color: white;
+    
 `
+
+export const ContainerProjects = styled.div`
+    background-color: #352728;
+    height: 580px;
+`
+
+export const Title = styled.h2`
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 45px;
+    color: white;
+`
+
+
 
