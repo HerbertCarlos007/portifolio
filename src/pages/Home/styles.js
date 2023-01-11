@@ -66,15 +66,33 @@ export const ButtonLinkedin = styled.button`
     align-items: center;
     border-radius: 62px;
     margin-top: 5px;
+    
 `
 
 export const Link = styled.a`
      color: white;
     font-size: 28px;
     text-decoration: none;
+    
 `
 
 export const AboutMeContainer = styled.div`
-    height: 500px;
+    height: 580px;
     background-color: #493737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
+
+export const AvatarAboutMe = styled.img`
+    position: relative;
+    right: 50px;
+    width: 350px;
+    height: 350px;
+`
+
+export const TextAboutMe = styled.span`
+    font-size: 25px;
+    color: white;
+`
+
