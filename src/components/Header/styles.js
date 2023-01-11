@@ -33,11 +33,13 @@ export const List = styled.ul`
     gap: 50px;
     list-style: none;
     cursor: pointer;
+    
 `
 
 export const ListItem = styled.li`
 font-size: 18px;
 color: white;
+
 `
 
 export const LinkToSession = styled.a`

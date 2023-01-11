@@ -13,7 +13,12 @@ import {
     AvatarAboutMe,
     TextAboutMe,
     ContainerProjects,
-    Title
+    Title,
+    CardProjects,
+    ContainerCardProjects,
+    ComingSoon,
+    TextComingSoon,
+    LinkToGithub
 } from './styles'
 import { Header } from '../../components/Header'
 import avatar from '../../assets/avatar.png'
@@ -43,25 +48,45 @@ export const Home = () => {
                 <TextAboutMe>
                     Sobre mim
 
-                    <p style={{textIndent: '30px'}}>Meu nome é Herbert Carlos e eu sou um apaixonado </p>
-                    
-                    por tecnologia que decidiu trilhar o caminho da 
-                    <br/> 
-                    programação. Possuo experiência em Desenvolvimento 
-                    <br/> 
-                    Web. Trabalhei com projetos envolvendo gestão 
-                    <br/> 
-                    de seguros, APIs e banco de dados. Atualmente estou 
-                    <br/> 
-                    focando nas tecnologias voltadas ao Frontend e Backend. 
-                    <br/> 
+                    <p style={{ textIndent: '30px' }}>Meu nome é Herbert Carlos e eu sou um apaixonado </p>
+
+                    por tecnologia que decidiu trilhar o caminho da
+                    <br />
+                    programação. Possuo experiência em Desenvolvimento
+                    <br />
+                    Web. Trabalhei com projetos envolvendo gestão
+                    <br />
+                    de seguros, APIs e banco de dados. Atualmente estou
+                    <br />
+                    focando nas tecnologias voltadas ao Frontend e Backend.
+                    <br />
 
 
-                   <p style={{textIndent: '30px', marginTop: '10px'}}>Hoje já entendo tecnologias como ReactJS, NodeJS, Mysql e etc.</p></TextAboutMe>
+                    <p style={{ textIndent: '30px', marginTop: '10px' }}>Hoje já entendo tecnologias como ReactJS, NodeJS, Mysql e etc.</p></TextAboutMe>
             </AboutMeContainer>
 
             <ContainerProjects id="projects">
                 <Title>Projetos</Title>
+                <ContainerCardProjects>
+                    <CardProjects>
+                        <ComingSoon>
+                            <TextComingSoon>Em breve</TextComingSoon>
+                        </ComingSoon>
+                    </CardProjects>
+                    <CardProjects>
+                        <ComingSoon>
+                            <TextComingSoon>Em breve</TextComingSoon>
+                        </ComingSoon>
+                    </CardProjects>
+                    <CardProjects>
+                        <ComingSoon>
+                            <TextComingSoon>Em breve</TextComingSoon>
+                        </ComingSoon>
+                    </CardProjects>
+                </ContainerCardProjects>
+
+                <LinkToGithub href="https://github.com/HerbertCarlos007?tab=repositories" target='_blank'>Repositórios no github</LinkToGithub>
+
             </ContainerProjects>
         </>
 

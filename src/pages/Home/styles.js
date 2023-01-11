@@ -113,5 +113,48 @@ export const Title = styled.h2`
     color: white;
 `
 
+export const ContainerCardProjects = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+`
+
+export const CardProjects = styled.div`
+    background-color: #C4C4C4;
+    height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 30px;  
+`
+export const ComingSoon = styled.div`
+    background-color: #705656;
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+`
+
+export const TextComingSoon = styled.span`
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+`
 
 
+export const LinkToGithub = styled.a`
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 60px;
+    text-decoration: none;
+    color: white;
+
+    :hover {
+        color: green;
+    }
+`
