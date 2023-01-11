@@ -18,7 +18,9 @@ import {
     ContainerCardProjects,
     ComingSoon,
     TextComingSoon,
-    LinkToGithub
+    LinkToGithub,
+    ContainerSkills
+    ,Paragraph
 } from './styles'
 import { Header } from '../../components/Header'
 import avatar from '../../assets/avatar.png'
@@ -46,9 +48,9 @@ export const Home = () => {
             <AboutMeContainer id="aboutMe">
                 <AvatarAboutMe src={avatar2} />
                 <TextAboutMe>
-                    Sobre mim
+                    <Title style={{marginRight: '325px', marginBottom: '100px'}}>Sobre mim</Title>
 
-                    <p style={{ textIndent: '30px' }}>Meu nome é Herbert Carlos e eu sou um apaixonado </p>
+                     <Paragraph>Meu nome é Herbert Carlos e eu sou um apaixonado</Paragraph>
 
                     por tecnologia que decidiu trilhar o caminho da
                     <br />
@@ -61,8 +63,8 @@ export const Home = () => {
                     focando nas tecnologias voltadas ao Frontend e Backend.
                     <br />
 
-
-                    <p style={{ textIndent: '30px', marginTop: '10px' }}>Hoje já entendo tecnologias como ReactJS, NodeJS, Mysql e etc.</p></TextAboutMe>
+                    <Paragraph>Hoje já entendo tecnologias como ReactJS, NodeJS, Mysql e etc.</Paragraph>
+                    </TextAboutMe>
             </AboutMeContainer>
 
             <ContainerProjects id="projects">
@@ -88,6 +90,10 @@ export const Home = () => {
                 <LinkToGithub href="https://github.com/HerbertCarlos007?tab=repositories" target='_blank'>Repositórios no github</LinkToGithub>
 
             </ContainerProjects>
+
+            <ContainerSkills id="skills">
+                <Title>Habilidades</Title>
+            </ContainerSkills>
         </>
 
     )

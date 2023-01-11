@@ -84,6 +84,10 @@ export const AboutMeContainer = styled.div`
     align-items: center;
 `
 
+export const Paragraph = styled.p`
+    text-indent: 25px;
+`
+
 export const AvatarAboutMe = styled.img`
     position: relative;
     right: 50px;
@@ -158,3 +162,9 @@ export const LinkToGithub = styled.a`
         color: green;
     }
 `
+
+export const ContainerSkills = styled.div`
+     height: 580px;
+    background-color: #493737;
+`
+
