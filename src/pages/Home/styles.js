@@ -6,6 +6,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 999;
 `
 
 export const Text = styled.span`
@@ -32,7 +33,7 @@ export const TextName = styled.h1`
 export const Description = styled.div`
     margin-left: 22%;
     margin-top: 12%;
-    z-index: 999;
+    
     `
     const animationAvatar = keyframes`
         0% {
@@ -71,4 +72,9 @@ export const Link = styled.a`
      color: white;
     font-size: 28px;
     text-decoration: none;
+`
+
+export const AboutMeContainer = styled.div`
+    height: 500px;
+    background-color: #493737;
 `

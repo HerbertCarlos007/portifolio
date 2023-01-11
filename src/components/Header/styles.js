@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
-    height: 95px;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     background: rgba( 220, 230, 240, 0.1 );
@@ -9,6 +12,7 @@ export const Container = styled.div`
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );    
+    z-index: 999;
 `
 
 export const Logo = styled.div`
@@ -34,5 +38,10 @@ export const List = styled.ul`
 export const ListItem = styled.li`
 font-size: 18px;
 color: white;
+`
+
+export const LinkToSession = styled.a`
+    text-decoration: none;
+    color: white;
 `
 

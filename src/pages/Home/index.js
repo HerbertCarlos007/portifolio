@@ -1,11 +1,12 @@
 import React from "react";
-import { Avatar, Container, Text, TextHello, TextName, Description, ContainerAvatar, ButtonLinkedin, Link } from './styles'
+import { Avatar, Container, Text, TextHello, TextName, Description, ContainerAvatar, ButtonLinkedin, Link, AboutMeContainer } from './styles'
 import { Header } from '../../components/Header'
 import avatar from '../../assets/avatar.png'
 
 export const Home = () => {
     return (
-        <Container>
+        <>
+        <Container id="home">
             <Header />
             <Description>
                 <TextHello>Oi, eu sou</TextHello>
@@ -17,9 +18,14 @@ export const Home = () => {
             </Description>
             <ContainerAvatar>
 
-            <Avatar src={avatar}/>
+                <Avatar src={avatar} />
             </ContainerAvatar>
+        </Container >
+        
+       <AboutMeContainer id="aboutMe">
 
-        </Container>
+       </AboutMeContainer>
+        </>
+
     )
 }

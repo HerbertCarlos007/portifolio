@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, RightSide, List, ListItem, Logo } from './styles'
+import { Container, RightSide, List, ListItem, Logo, LinkToSession } from './styles'
 
 
 export const Header = () => {
@@ -7,10 +7,18 @@ export const Header = () => {
         <Container>
             <Logo>HC</Logo>
                 <List>
-                    <ListItem>Início</ListItem>
-                    <ListItem>Sobre mim</ListItem>
-                    <ListItem>Projetos</ListItem>
-                    <ListItem>Habilidades</ListItem>
+                    <ListItem>
+                        <LinkToSession href="#home">Início</LinkToSession>
+                    </ListItem>
+                    <ListItem>
+                        <LinkToSession href="#aboutMe">Sobre mim</LinkToSession>
+                    </ListItem>
+                    <ListItem>
+                        <LinkToSession href="#projects">Projetos</LinkToSession>
+                    </ListItem>
+                    <ListItem>
+                        <LinkToSession href="#skills">Habilidades</LinkToSession>
+                    </ListItem>
                 </List>
         </Container>
     )
