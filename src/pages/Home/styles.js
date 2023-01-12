@@ -4,9 +4,8 @@ export const Container = styled.div`
      background: linear-gradient(63.13deg, #352728 51.04%, #8E5D52 51.05%);
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 999;
+    
+    
 `
 
 export const Text = styled.span`
@@ -37,24 +36,24 @@ export const Description = styled.div`
     `
     const animationAvatar = keyframes`
         0% {
-            top: -290px;
+            top: 120px;
         }
     
         100%{
-            top: -320px;
+            top: 150px;
         }
     `
 export const ContainerAvatar = styled.div`
-    width: 500px;
     display: flex;
-    justify-content: right;
-   
+    justify-content: center;
+    position: relative;
     animation: ${animationAvatar} 2.1s infinite alternate-reverse;
 `
 export const Avatar = styled.img`
-    display: flex;
-    justify-content: center;
- width: 300px;
+    position: relative;
+    left: 20px;
+    width: 400px;
+    height: 400px;
 
 `
 
@@ -67,7 +66,6 @@ export const ButtonLinkedin = styled.button`
     align-items: center;
     border-radius: 62px;
     margin-top: 5px;
-    z-index: -1;
     
 `
 
@@ -240,6 +238,7 @@ export const ImageIcons = styled.img`
 `
 
 export const ContainerImageIcons = styled.div`
+
 `
 
 export const TextEmailFooter = styled.span`

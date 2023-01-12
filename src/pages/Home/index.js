@@ -59,6 +59,7 @@ export const Home = () => {
                         <Link href="https://www.linkedin.com/in/herbert-carlos-063a62184/" target='_blank'>Linkedin</Link>
                     </ButtonLinkedin>
                 </Description>
+                
                 <ContainerAvatar>
 
                     <Avatar src={avatar} />
