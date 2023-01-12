@@ -45,14 +45,15 @@ export const Description = styled.div`
         }
     `
 export const ContainerAvatar = styled.div`
+    width: 500px;
     display: flex;
-    justify-content: center;
-    position: relative;
-    left: 260px;
-    bottom: 200px;
+    justify-content: right;
+   
     animation: ${animationAvatar} 2.1s infinite alternate-reverse;
 `
 export const Avatar = styled.img`
+    display: flex;
+    justify-content: center;
  width: 300px;
 
 `
@@ -66,6 +67,7 @@ export const ButtonLinkedin = styled.button`
     align-items: center;
     border-radius: 62px;
     margin-top: 5px;
+    z-index: -1;
     
 `
 
@@ -77,7 +79,7 @@ export const Link = styled.a`
 `
 
 export const AboutMeContainer = styled.div`
-    height: 580px;
+    height: 100vh;
     background-color: #493737;
     display: flex;
     justify-content: center;
@@ -103,7 +105,7 @@ export const TextAboutMe = styled.span`
 
 export const ContainerProjects = styled.div`
     background-color: #352728;
-    height: 480px;
+    height: 100vh;
 `
 
 export const Title = styled.h2`
@@ -165,7 +167,7 @@ export const LinkToGithub = styled.a`
 `
 
 export const ContainerSkills = styled.div`
-     height: 540px;
+     height: 100vh;
     background-color: #493737;
 `
 
@@ -213,5 +215,34 @@ export const TextDescriptionSkill = styled.span`
     font-family: 'Quando', serif;
     font-size: 20px;
     max-width: 40%;
+`
+
+export const Footer = styled.footer`
+    background-color: #241a1b;
+    display: flex;
+    justify-content: space-evenly;
+    
+`
+
+export const ContainerContact = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const ContainerIcons = styled.div`
+    display: flex;
+`
+
+export const ImageIcons = styled.img`
+    width: 80px;
+    padding: 10px;
+`
+
+export const ContainerImageIcons = styled.div`
+`
+
+export const TextEmailFooter = styled.span`
+    color: white;
 `
 

@@ -25,7 +25,13 @@ import {
     CardSkills,
     ImageSkill,
     ContainerDescriptionSkill,
-    TextDescriptionSkill
+    TextDescriptionSkill,
+    Footer,
+    TextEmailFooter,
+    ContainerContact,
+    ContainerIcons,
+    ImageIcons,
+    ContainerImageIcons
 } from './styles'
 import { Header } from '../../components/Header'
 import avatar from '../../assets/avatar.png'
@@ -37,7 +43,7 @@ import react from '../../assets/react.svg'
 import styledComponents from '../../assets/styledComponents.svg'
 import git from '../../assets/git.svg'
 import github from '../../assets/github.svg'
-import node from '../../assets/node.png'
+import linkedin from '../../assets/linkedin.svg'
 
 
 export const Home = () => {
@@ -138,11 +144,32 @@ export const Home = () => {
 
                 <ContainerDescriptionSkill>
                     <TextDescriptionSkill>
-                     <Paragraph>/* Passe o mouse por cima de</Paragraph>
-                     alguma habilidade para ler a<br/> descrição */
+                        <Paragraph>/* Passe o mouse por cima de</Paragraph>
+                        alguma habilidade para ler a
+                        <br />
+                        descrição */
                     </TextDescriptionSkill>
                 </ContainerDescriptionSkill>
             </ContainerSkills>
+            <Footer>
+                <ContainerContact>
+                    <TextEmailFooter>E-mail para contato: herbert.saopaulino@hotmail.com</TextEmailFooter>
+                </ContainerContact>
+
+                <ContainerIcons>
+                    <ContainerImageIcons>
+                        <Link href="https://github.com/HerbertCarlos007?tab=repositories" target='_blank'>
+                            <ImageIcons src={github}></ImageIcons>
+                        </Link>
+                    </ContainerImageIcons>
+
+                    <ContainerImageIcons>
+                        <Link href="https://www.linkedin.com/in/herbert-carlos-063a62184/" target='_blank'>
+                            <ImageIcons src={linkedin}></ImageIcons>
+                        </Link>
+                    </ContainerImageIcons>
+                </ContainerIcons>
+            </Footer>
         </>
 
     )
