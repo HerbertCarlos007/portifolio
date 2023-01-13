@@ -4,10 +4,13 @@ export const Container = styled.div`
      background: linear-gradient(63.13deg, #352728 51.04%, #8E5D52 51.05%);
     height: 600px;
     display: flex;
+
+    @media (min-width: 1400px) {
+        height: 100vh;
+    }
     
     
 `
-
 export const Text = styled.span`
     color: white;
     margin: 0;
@@ -33,6 +36,12 @@ export const Description = styled.div`
     margin-left: 22%;
     margin-top: 12%;
     
+    @media (min-width: 1400px) {
+        position: relative;
+        top: 100px;
+        left: 100px;
+    }
+    
     `
     const animationAvatar = keyframes`
         0% {
@@ -48,6 +57,11 @@ export const ContainerAvatar = styled.div`
     justify-content: center;
     position: relative;
     animation: ${animationAvatar} 2.1s infinite alternate-reverse;
+
+    @media (min-width: 1400px) {
+        margin-left: 150px;
+        margin-top: 100px;
+    }
 `
 export const Avatar = styled.img`
     position: relative;
@@ -77,11 +91,15 @@ export const Link = styled.a`
 `
 
 export const AboutMeContainer = styled.div`
-    height: 100vh;
+    padding: 50px;
     background-color: #493737;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 1400px) {
+        
+    }
 `
 
 export const Paragraph = styled.p`
@@ -97,13 +115,15 @@ export const AvatarAboutMe = styled.img`
 
 export const TextAboutMe = styled.span`
     font-size: 25px;
+    position: relative;
+    bottom: 50px;
     color: white;
     
 `
 
 export const ContainerProjects = styled.div`
     background-color: #352728;
-    height: 500px;
+    padding: 10px;
 `
 
 export const Title = styled.h2`
@@ -165,7 +185,7 @@ export const LinkToGithub = styled.a`
 `
 
 export const ContainerSkills = styled.div`
-     height: 550px;
+    padding: 20px;
     background-color: #493737;
 `
 
@@ -178,9 +198,7 @@ export const ContainerWithMySkills = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
   grid-gap: 25px;
-
-  
-    
+ 
 `
 
 export const CardSkills = styled.div`
@@ -213,6 +231,11 @@ export const TextDescriptionSkill = styled.span`
     font-family: 'Quando', serif;
     font-size: 20px;
     max-width: 40%;
+
+    @media (min-width: 1400px) {
+        position: relative;
+        right: 230px;
+    }
 `
 
 export const Footer = styled.footer`

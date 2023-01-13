@@ -148,7 +148,7 @@ export const Home = () => {
                         </CardSkills>
                     </Tooltip>
 
-                    <Tooltip title='GIT: É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de softare'>
+                    <Tooltip title='GIT: É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de so'>
                         <CardSkills>
                             <ImageSkill src={git} />
                         </CardSkills>
