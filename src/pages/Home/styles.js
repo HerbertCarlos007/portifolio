@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
      background: linear-gradient(63.13deg, #352728 51.04%, #8E5D52 51.05%);
-    height: 100vh;
+    height: 600px;
     display: flex;
     
     
@@ -103,16 +103,16 @@ export const TextAboutMe = styled.span`
 
 export const ContainerProjects = styled.div`
     background-color: #352728;
-    height: 100vh;
+    height: 500px;
 `
 
 export const Title = styled.h2`
     display: flex;
-    height: 0;
+        
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 70px;
+    top: 100px;
     font-family: 'Press Start 2P', cursive;
     font-size: 45px;
     color: white;
@@ -165,7 +165,7 @@ export const LinkToGithub = styled.a`
 `
 
 export const ContainerSkills = styled.div`
-     height: 100vh;
+     height: 550px;
     background-color: #493737;
 `
 

@@ -45,6 +45,7 @@ import git from '../../assets/git.svg'
 import github from '../../assets/github.svg'
 import linkedin from '../../assets/linkedin.svg'
 
+import { Tooltip } from "@mui/material";
 
 export const Home = () => {
     return (
@@ -59,7 +60,7 @@ export const Home = () => {
                         <Link href="https://www.linkedin.com/in/herbert-carlos-063a62184/" target='_blank'>Linkedin</Link>
                     </ButtonLinkedin>
                 </Description>
-                
+
                 <ContainerAvatar>
 
                     <Avatar src={avatar} />
@@ -116,29 +117,42 @@ export const Home = () => {
                 <Title>Habilidades</Title>
                 <ContainerWithMySkills>
 
-                    <CardSkills>
-                        <ImageSkill src={html} />
-                    </CardSkills>
+                    <Tooltip title='HTML: É uma linguagem de marcação utlizada na construção de páginas web'>
+                        <CardSkills>
+                            <ImageSkill src={html} />
+                        </CardSkills>
+                    </Tooltip>
 
-                    <CardSkills>
-                        <ImageSkill src={css} />
-                    </CardSkills>
+                    <Tooltip title='CSS: É um mecanismo para adicionar estilo a um documento web'>
+                        <CardSkills>
+                            <ImageSkill src={css} />
+                        </CardSkills>
+                    </Tooltip>
 
-                    <CardSkills>
-                        <ImageSkill src={js} />
-                    </CardSkills>
+                    <Tooltip title='JAVASCRIPT: É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web'>
+                        <CardSkills>
+                            <ImageSkill src={js} />
+                        </CardSkills>
+                    </Tooltip>
 
-                    <CardSkills>
-                        <ImageSkill src={react} />
-                    </CardSkills>
+                    <Tooltip title='REACTJS: O React é uma biblioteca Javascript de código aberto com foco em criar interfaces em páginas web'>
+                        <CardSkills>
+                            <ImageSkill src={react} />
+                        </CardSkills>
+                    </Tooltip>
 
-                    <CardSkills>
-                        <ImageSkill src={styledComponents} />
-                    </CardSkills>
+                    <Tooltip title='STYLED COMPONENTS: É uma biblioteca que utiliza o conceito de CSS-IN-JS, 
+                    ou seja, que nos permita escrever códigos CSS dentro do JS '>
+                        <CardSkills>
+                            <ImageSkill src={styledComponents} />
+                        </CardSkills>
+                    </Tooltip>
 
-                    <CardSkills>
-                        <ImageSkill src={git} />
-                    </CardSkills>
+                    <Tooltip title='GIT: É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de softare'>
+                        <CardSkills>
+                            <ImageSkill src={git} />
+                        </CardSkills>
+                    </Tooltip>
 
 
                 </ContainerWithMySkills>
@@ -170,6 +184,7 @@ export const Home = () => {
                         </Link>
                     </ContainerImageIcons>
                 </ContainerIcons>
+
             </Footer>
         </>
 
